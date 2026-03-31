@@ -1,6 +1,6 @@
 {
   "name": "Minecraft Server (Paper)",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "slug": "minecraft_server",
   "description": "Minecraft Server via itzg Docker (Paper/Bukkit)",
   "startup": "services",
@@ -10,7 +10,7 @@
   {
     "type": "addon_config",
     "read_only": false,
-    "path": "/data"
+    "path": "/configdata"
   }
 ],
   "ports": {
