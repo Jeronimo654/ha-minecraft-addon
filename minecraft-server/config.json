@@ -1,0 +1,22 @@
+{
+  "name": "Minecraft Server (Paper)",
+  "version": "1.0",
+  "slug": "minecraft_server",
+  "description": "Minecraft Server via itzg Docker (Paper/Bukkit)",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "map": [
+    "data:/data"
+  ],
+  "options": {
+    "memory": "2G",
+    "type": "PAPER",
+    "version": "LATEST"
+  },
+  "schema": {
+    "memory": "str",
+    "type": "str",
+    "version": "str"
+  }
+}
