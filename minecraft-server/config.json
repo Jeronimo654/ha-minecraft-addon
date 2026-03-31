@@ -1,28 +1,56 @@
-{
-  "name": "Minecraft Server (Paper)",
-  "version": "1.0.1",
-  "slug": "minecraft_server",
-  "description": "Minecraft Server via itzg Docker (Paper/Bukkit)",
-  "startup": "services",
-  "boot": "auto",
-  "arch": ["amd64"],
-  "map": [
-    "addon_config:rw"
-  ],
-  "ports": {
-    "25565/tcp": 25565
-  },
-  "environment": {
-    "EULA": "TRUE"
-  },
-  "options": {
-    "memory": "1G",
-    "type": "PAPER",
-    "version": "LATEST"
-  },
-  "schema": {
-    "memory": "str",
-    "type": "str",
-    "version": "str"
-  }
+"options": {
+  "memory": "1G",
+  "type": "PAPER",
+  "version": "LATEST",
+  "motd": "Mein Server",
+  "difficulty": "easy",
+  "gamemode": "survival",
+  "max_players": 100,
+  "view_distance": 10,
+  "simulation_distance": 5,
+  "pvp": true,
+  "online_mode": true,
+  "allow_flight": false,
+  "hardcore": false,
+  "enable_command_block": false,
+  "spawn_animals": true,
+  "spawn_monsters": true,
+  "spawn_npcs": true,
+  "generate_structures": true,
+  "level_type": "minecraft:normal",
+  "level_seed": "",
+  "whitelist": false,
+  "ops": [],
+  "allow_nether": true,
+  "enable_rcon": false,
+  "rcon_password": "",
+  "rcon_port": 25575
+},
+"schema": {
+  "memory": "str",
+  "type": "str",
+  "version": "str",
+  "motd": "str",
+  "difficulty": "list(easy|normal|hard|peaceful)",
+  "gamemode": "list(survival|creative|adventure|spectator)",
+  "max_players": "int",
+  "view_distance": "int",
+  "simulation_distance": "int",
+  "pvp": "bool",
+  "online_mode": "bool",
+  "allow_flight": "bool",
+  "hardcore": "bool",
+  "enable_command_block": "bool",
+  "spawn_animals": "bool",
+  "spawn_monsters": "bool",
+  "spawn_npcs": "bool",
+  "generate_structures": "bool",
+  "level_type": "str",
+  "level_seed": "str",
+  "whitelist": "bool",
+  "ops": ["str"],
+  "allow_nether": "bool",
+  "enable_rcon": "bool",
+  "rcon_password": "str",
+  "rcon_port": "int"
 }
