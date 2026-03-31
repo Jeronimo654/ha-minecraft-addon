@@ -1,4 +1,21 @@
-"options": {
+{
+  "name": "Minecraft Server (Paper)",
+  "version": "1.0.2",
+  "slug": "minecraft_server",
+  "description": "Minecraft Server via itzg Docker (Paper/Bukkit)",
+  "startup": "services",
+  "boot": "auto",
+  "arch": ["amd64"],
+  "map": [
+    "addon_config:rw"
+  ],
+  "ports": {
+    "25565/tcp": 25565
+  },
+  "environment": {
+    "EULA": "TRUE"
+  },
+  "options": {
   "memory": "1G",
   "type": "PAPER",
   "version": "LATEST",
@@ -53,4 +70,5 @@
   "enable_rcon": "bool",
   "rcon_password": "str",
   "rcon_port": "int"
+  }
 }
