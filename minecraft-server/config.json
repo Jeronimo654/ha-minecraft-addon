@@ -1,6 +1,6 @@
 {
   "name": "Minecraft Server (Paper)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "minecraft_server",
   "description": "Minecraft Server via itzg Docker (Paper/Bukkit)",
   "startup": "services",
@@ -12,12 +12,14 @@
   "ports": {
     "25565/tcp": 25565
   },
+  "environment": {
+    "EULA": "TRUE"
+  },
   "options": {
-  "memory": "1G",
-  "type": "PAPER",
-  "version": "LATEST",
-  "eula": true
-},
+    "memory": "1G",
+    "type": "PAPER",
+    "version": "LATEST"
+  },
   "schema": {
     "memory": "str",
     "type": "str",
