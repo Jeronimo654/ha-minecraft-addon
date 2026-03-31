@@ -1,13 +1,13 @@
 {
   "name": "Minecraft Server (Paper)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "slug": "minecraft_server",
   "description": "Minecraft Server via itzg Docker (Paper/Bukkit)",
   "startup": "services",
   "boot": "auto",
   "arch": ["amd64"],
   "map": [
-  "data:rw"
+  "data"
 ],
   "ports": {
     "25565/tcp": 25565
