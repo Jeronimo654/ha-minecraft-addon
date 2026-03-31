@@ -7,15 +7,18 @@
   "boot": "auto",
   "arch": ["amd64"],
   "map": [
-    "addon_config:rw"
-  ],
+  {
+    "type": "addon_config",
+    "read_only": false,
+    "path": "/data"
+  }
+],
   "ports": {
     "25565/tcp": 25565
   },
 
   "environment": {
-    "EULA": "TRUE",
-    "DATA_DIR": "/addon_configs"
+    "EULA": "TRUE"
   },
 
   "options": {
