@@ -7,7 +7,7 @@
   "boot": "auto",
   "arch": ["amd64"],
   "map": [
-    "addon_config:rw"
+    "addon_config:/data:rw"
   ],
   "ports": {
     "25565/tcp": 25565
