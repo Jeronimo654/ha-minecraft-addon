@@ -2,8 +2,6 @@
 
 echo "Starte Minecraft Server..."
 
-cd /configdata
-
 MEMORY=$(jq -r '.memory' /data/options.json)
 TYPE=$(jq -r '.type' /data/options.json)
 VERSION=$(jq -r '.version' /data/options.json)
