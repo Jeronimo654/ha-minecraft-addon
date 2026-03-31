@@ -13,10 +13,11 @@
     "25565/tcp": 25565
   },
   "options": {
-    "memory": "2G",
-    "type": "PAPER",
-    "version": "LATEST"
-  },
+  "memory": "1G",
+  "type": "PAPER",
+  "version": "LATEST",
+  "eula": true
+},
   "schema": {
     "memory": "str",
     "type": "str",
