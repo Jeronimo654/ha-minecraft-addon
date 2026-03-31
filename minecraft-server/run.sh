@@ -2,6 +2,8 @@
 
 echo "Starte Minecraft Server..."
 
+cd /configdata
+
 MEMORY=$(jq -r '.memory' /data/options.json)
 TYPE=$(jq -r '.type' /data/options.json)
 VERSION=$(jq -r '.version' /data/options.json)
@@ -33,8 +35,5 @@ export ALLOW_NETHER=$ALLOW_NETHER
 export ENABLE_RCON=$ENABLE_RCON
 export RCON_PASSWORD=$RCON_PASSWORD
 export RCON_PORT=$RCON_PORT
-
-rm -rf /data
-ln -s /configdata /data
 
 exec /start
