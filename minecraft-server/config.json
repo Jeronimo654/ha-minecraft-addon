@@ -15,6 +15,7 @@
 
   "environment": {
     "EULA": "TRUE"
+    "DATA_DIR": "/addon_configs"
   },
 
   "options": {
