@@ -33,5 +33,6 @@ export ALLOW_NETHER=$ALLOW_NETHER
 export ENABLE_RCON=$ENABLE_RCON
 export RCON_PASSWORD=$RCON_PASSWORD
 export RCON_PORT=$RCON_PORT
+export DATA_DIR=/configdata
 
 exec /start
